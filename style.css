@@ -1,6 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
+    position: relative;
     font-family: 'Lato', sans-serif;
 }
 
@@ -20,7 +25,7 @@ main {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     border: dashed 3px #000000;
     border-radius: 15px;
     width: 1000px;
