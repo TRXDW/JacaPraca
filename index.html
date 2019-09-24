@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JacaPraca</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h2>Skopiuj to</h2>
+        <div class="code">
+            <pre style="word-wrap: break-word; white-space: pre-wrap;">
+        s = document.createElement('script');
+        s.src = 'https://trxdw.github.io/JacaPraca/JacaPraca.min.js';
+        document.body.appendChild(s);</pre>
+        </div>
+        <a href="JacaPraca.js"><button class="btn">Script</button></a>
+
+        <button class="btn" id="copy-button">Copy</button>
+        <h2>Instrukcja</h2>
+        <ul>
+            <li>Kopiujesz tekst z niebieskiego tła, bądź klikasz Copy</li>
+            <li>Wchodzisz na stronę kwalifikacjewzawodzie.pl</li>
+            <li>Klikasz f12</li>
+            <li>Klikasz Console i wklejasz kod</li>
+            <li>Enter</li>
+            <li>I tyle</li>
+        </ul>
+        <h2>Uwagi</h2>
+        <p>Wspiera wszystkie obecne e14 na dzień (24.09.2019)</p>
+    </main>
+    <script>
+        function copyTextToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function () {
+                console.log('Async: Copying to clipboard was successful!');
+            }, function (err) {
+                console.error('Async: Could not copy text: ', err);
+            });
+        }
+        var copyBobBtn = document.querySelector('#copy-button');
+        copyBobBtn.addEventListener('click', function (event) {
+            var kopia = document.querySelector('pre');
+            copyTextToClipboard(kopia.innerHTML);
+        });
+    </script>
+</body>
+
+</html>
