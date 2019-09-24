@@ -1,9 +1,10 @@
 
 (function () {
 
-    let data = "6-2014";
-    fetch(`https://trxdw.github.io/JacaPraca/e14/${data}.json`)
-        .then(response => response.json())
-        .then(result => console.log(result))
+    let date = document.querySelector('.breadcrumbs').children[3].children[0].innerHTML.split("_");
+
+    let months = ["styczen", "luty", "marzec", "kwiecien", "maj", "czerwiec", "lipiec", "sierpien", "wrzesien", "pazdziernik", "listopad", "grudzien"];
+
+    return (months.indexOf(date[1]) + 1) + "-" + date[2];
 
 })();
