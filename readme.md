@@ -4,5 +4,12 @@ JacaPraca jest to skrypt napisany w JS, który podaje wam odpowiedzi w czasie ro
 ## Instalacja
 Nie trzeba
 
+## HOTKEY
+W wersji 2.0 wprawadziłem hotkey (dopiero po wciśniąciu hotkeya wysuwają się odpowiedzi, ponowne wciśnięcie chowa je), przypisane do tego zadanie jest litera "H"
+
+## Wsparcie z Tampermonkey
+
+Od wersji 2.0 działa wraz z tampermonkey (program, który sam podpina wam skrypt)
+
 ## Użycie
 Wchodzimy [TUTAJ](https://trxdw.github.io/JacaPraca) i wykonujemy następujące kroki.
